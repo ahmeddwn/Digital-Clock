@@ -1,0 +1,78 @@
+
+
+body{
+    font-family:sans-serif ;
+    /* remove default margin */
+    margin: 0;
+    /* bring everything to center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* bring to center vertically also */
+    height: 100vh;
+    justify-content: center;
+    /* set a background image using a url */
+    background: url("https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+   /* make background cover whole view port */
+    background-size: cover;
+
+    /* remove scrollbar on side */
+    overflow: hidden;
+}
+
+h2{
+    /* make all letters uppercase */
+    text-transform: uppercase;
+    /* increase letter spacing */
+    letter-spacing: 4px;
+    font-size: 14px;
+    /* align the text to center so it stays at center even if screen size changes */
+    text-align: center;
+    color: white;
+}
+.clock{
+    /* make the text appear next to each other */
+    display: flex;
+
+}
+
+.clock div{
+    /* give some space among the divs */
+    margin: 5px;
+    /* we make clock div relative so we can set position of AMPM to absolute */
+    position: relative;
+}
+.clock span{
+    width: 100px;
+    height: 80px;
+    background-color: slateblue;
+    opacity: 0.8;
+    color: white;
+    /* bring spans above one another */
+    display: flex;
+    /* bring everthing center horizontally */
+    justify-content: center;
+    /* bring everything center  vertically */
+    align-items: center;
+    font-size: 50px;
+    /* add text shadow text-shadow: horizontal vertical blur radius color */
+    text-shadow:2px 2px 4px rgba(0,0,0,0.3) ;
+}
+.clock .text{
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: darkblue;
+
+}
+
+.clock #ampm{
+    position: absolute;
+    /* we bring it down */
+    bottom: 0;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: green;
+}
